@@ -36,7 +36,7 @@ export const loadingError = bool => (
   
       dispatch(loadingInProgress(true))
   
-      fetch(`http://api.canillitapp.com/news/category/${category}}`)
+      fetch(`https://api.canillitapp.com/news/category/${category}`)
         .then((response) => {
           if (!response.ok) {
             throw Error(response.statusText)
